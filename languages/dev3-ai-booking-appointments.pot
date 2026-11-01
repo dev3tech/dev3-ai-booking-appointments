@@ -1,0 +1,3876 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Booking & Appointments for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-booking-appointments\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T03:38:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-booking-appointments\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-booking-appointments.php
+msgid "DEV3 AI Booking & Appointments for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-booking-appointments.php
+msgid "https://dev3.tech/item/dev3-ai-booking-appointments"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-booking-appointments.php
+msgid "Appointment booking with services, staff, availability, payments, reminders and DEV3 AI natural-language booking."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-booking-appointments.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-booking-appointments.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:43
+msgid "DEV3 AI Booking"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:45
+#: build/admin.js:1
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:46
+#: build/admin.js:1
+msgid "Calendar"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:47
+#: build/admin.js:1
+msgid "Bookings"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:48
+#: build/admin.js:1
+msgid "Services"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:49
+#: build/admin.js:1
+#: build/blocks.js:1
+msgid "Staff"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:50
+#: build/admin.js:1
+msgid "Customers"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:51
+#: build/admin.js:1
+msgid "Notifications"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:52
+#: includes/Admin/Admin_Page.php:85
+#: build/admin.js:1
+msgid "Settings"
+msgstr ""
+
+#: includes/Ai/Nl_Booking.php:37
+msgid "Tell us when suits you, for example \"Tuesday after 5\"."
+msgstr ""
+
+#. translators: 1: start, 2: end.
+#: includes/Ai/Nl_Parser.php:424
+#, php-format
+msgid "between %1$s and %2$s"
+msgstr ""
+
+#. translators: %s: time.
+#: includes/Ai/Nl_Parser.php:427
+#, php-format
+msgid "after %s"
+msgstr ""
+
+#. translators: %s: time.
+#: includes/Ai/Nl_Parser.php:430
+#, php-format
+msgid "before %s"
+msgstr ""
+
+#. translators: %s: staff name.
+#: includes/Ai/Nl_Parser.php:435
+#, php-format
+msgid "with %s"
+msgstr ""
+
+#: includes/Ai/Writers.php:36
+#: includes/Notify/Templates.php:208
+#: includes/Rest/Admin_Controller.php:909
+msgid "Unknown template."
+msgstr ""
+
+#: includes/Ai/Writers.php:64
+msgid "DEV3 AI returned an empty draft. Try again."
+msgstr ""
+
+#: includes/Ai/Writers.php:86
+msgid "The DEV3 AI risk hint is turned off in Settings."
+msgstr ""
+
+#: includes/Booking/Manager.php:103
+#: includes/Rest/Admin_Controller.php:747
+#: includes/Rest/Public_Controller.php:146
+msgid "Choose a service."
+msgstr ""
+
+#: includes/Booking/Manager.php:107
+#: includes/Rest/Admin_Controller.php:607
+#: includes/Rest/Public_Controller.php:304
+msgid "Choose a time."
+msgstr ""
+
+#: includes/Booking/Manager.php:117
+msgid "Nobody is available for this service."
+msgstr ""
+
+#: includes/Booking/Manager.php:127
+#: includes/Frontend/Strings.php:73
+msgid "Enter your phone number."
+msgstr ""
+
+#: includes/Booking/Manager.php:130
+#: includes/Frontend/Strings.php:71
+msgid "Enter your name."
+msgstr ""
+
+#: includes/Booking/Manager.php:219
+msgid "Sorry, that time was just taken. Please choose another time."
+msgstr ""
+
+#: includes/Booking/Manager.php:222
+msgid "Booking created by an admin."
+msgstr ""
+
+#: includes/Booking/Manager.php:222
+msgid "Booking created online."
+msgstr ""
+
+#: includes/Booking/Manager.php:257
+msgid "That payment method is not available."
+msgstr ""
+
+#: includes/Booking/Manager.php:275
+msgid "The service no longer exists."
+msgstr ""
+
+#: includes/Booking/Manager.php:287
+msgid "That staff member is not available for this service."
+msgstr ""
+
+#: includes/Booking/Manager.php:319
+msgid "Sorry, that time is not available. Please choose another time."
+msgstr ""
+
+#. translators: 1: old UTC time, 2: new UTC time.
+#: includes/Booking/Manager.php:323
+#, php-format
+msgid "Moved from %1$s to %2$s (UTC)."
+msgstr ""
+
+#: includes/Booking/Manager.php:353
+msgid "This booking is already cancelled."
+msgstr ""
+
+#: includes/Booking/Manager.php:364
+#: build/admin.js:1
+msgid "Booking cancelled."
+msgstr ""
+
+#: includes/Booking/Manager.php:392
+msgid "Unknown status."
+msgstr ""
+
+#. translators: %s: status.
+#: includes/Booking/Manager.php:400
+#, php-format
+msgid "Status changed to %s."
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/Booking/Manager.php:435
+#, php-format
+msgid "Payment received: %s."
+msgstr ""
+
+#: includes/Booking/Manager.php:463
+msgid "Unpaid booking expired and the time was released."
+msgstr ""
+
+#: includes/Booking/Policy.php:30
+msgid "Online cancellation is not available. Please contact us."
+msgstr ""
+
+#: includes/Booking/Policy.php:33
+#: includes/Booking/Policy.php:56
+msgid "This booking can no longer be changed."
+msgstr ""
+
+#. translators: %d: hours.
+#: includes/Booking/Policy.php:38
+#, php-format
+msgid "Bookings can be cancelled online up to %d hour before the start. Please contact us."
+msgid_plural "Bookings can be cancelled online up to %d hours before the start. Please contact us."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Booking/Policy.php:53
+msgid "Online rescheduling is not available. Please contact us."
+msgstr ""
+
+#: includes/Booking/Policy.php:60
+msgid "This booking has already been rescheduled the maximum number of times. Please contact us."
+msgstr ""
+
+#. translators: %d: hours.
+#: includes/Booking/Policy.php:65
+#, php-format
+msgid "Bookings can be rescheduled online up to %d hour before the start. Please contact us."
+msgid_plural "Bookings can be rescheduled online up to %d hours before the start. Please contact us."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: hours.
+#: includes/Booking/Policy.php:99
+#, php-format
+msgid "Free cancellation up to %d hours before your appointment."
+msgstr ""
+
+#. translators: 1: hours, 2: count.
+#: includes/Booking/Policy.php:103
+#, php-format
+msgid "Reschedule online up to %1$d hours before (up to %2$d times)."
+msgstr ""
+
+#. translators: %d: hours.
+#: includes/Booking/Policy.php:107
+#, php-format
+msgid "Online payments are refunded in full when you cancel at least %d hours ahead."
+msgstr ""
+
+#. translators: %s: staff name.
+#: includes/Booking/Presenter.php:63
+#: includes/Notify/Ics.php:105
+#, php-format
+msgid "With %s"
+msgstr ""
+
+#. translators: %s: staff name.
+#: includes/Booking/Presenter.php:64
+#: includes/Notify/Ics.php:107
+msgid "Manage your booking:"
+msgstr ""
+
+#: includes/Booking/Presenter.php:85
+#: includes/Notify/Ics.php:95
+#: includes/Payments/Stripe.php:200
+#: includes/Payments/Woo.php:75
+#: build/admin.js:1
+msgid "Appointment"
+msgstr ""
+
+#: includes/Booking/Presenter.php:129
+msgid "(deleted service)"
+msgstr ""
+
+#: includes/Booking/Presenter.php:146
+#: includes/Frontend/Strings.php:83
+#: includes/Rest/Public_Controller.php:103
+#: build/admin.js:1
+msgid "Free"
+msgstr ""
+
+#. translators: %d: count.
+#: includes/Booking/Risk.php:59
+#, php-format
+msgid "%d earlier no-show"
+msgid_plural "%d earlier no-shows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count.
+#: includes/Booking/Risk.php:64
+#, php-format
+msgid "%d late cancellation"
+msgid_plural "%d late cancellations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Booking/Risk.php:68
+msgid "First visit"
+msgstr ""
+
+#: includes/Booking/Risk.php:72
+msgid "Pay later, nothing paid yet"
+msgstr ""
+
+#: includes/Booking/Risk.php:76
+msgid "Booked more than 3 weeks ahead"
+msgstr ""
+
+#: includes/Booking/Risk.php:80
+msgid "Rescheduled several times"
+msgstr ""
+
+#: includes/Booking/Risk.php:84
+msgid "Regular customer with a clean record"
+msgstr ""
+
+#: includes/Booking/Risk.php:88
+msgid "Paid in advance"
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: includes/Notify/Mailer.php:130
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Bookings.php:70
+msgid "Awaiting payment"
+msgstr ""
+
+#: includes/Data/Bookings.php:71
+#: build/admin.js:1
+msgid "Pending approval"
+msgstr ""
+
+#: includes/Data/Bookings.php:72
+#: build/admin.js:1
+msgid "Confirmed"
+msgstr ""
+
+#: includes/Data/Bookings.php:73
+#: build/admin.js:1
+msgid "Completed"
+msgstr ""
+
+#: includes/Data/Bookings.php:74
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: includes/Data/Bookings.php:75
+#: build/admin.js:1
+msgid "No-show"
+msgstr ""
+
+#: includes/Data/Bookings.php:76
+msgid "Expired"
+msgstr ""
+
+#: includes/Data/Customers.php:51
+#: includes/Frontend/Strings.php:72
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/Data/Customers.php:78
+msgid "Could not save the customer."
+msgstr ""
+
+#: includes/Data/Exceptions.php:112
+msgid "Choose a valid date range."
+msgstr ""
+
+#: includes/Data/Exceptions.php:115
+msgid "The start time must be before the end time."
+msgstr ""
+
+#: includes/Data/Exceptions.php:118
+msgid "Special hours need a start and end time."
+msgstr ""
+
+#: includes/Data/Exceptions.php:122
+#: includes/Data/Staff.php:276
+#: includes/Rest/Admin_Controller.php:303
+msgid "Staff member not found."
+msgstr ""
+
+#: includes/Data/Personal_Data.php:24
+#: includes/Data/Personal_Data.php:25
+#: includes/Data/Personal_Data.php:68
+#: includes/Payments/Woo.php:475
+#: includes/Payments/Woo.php:480
+#: includes/Payments/Woo.php:498
+msgid "Appointments"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:42
+msgid "Appointment customer profile"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:46
+#: build/admin.js:1
+msgid "Name"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:50
+#: includes/Frontend/Strings.php:67
+#: build/admin.js:1
+msgid "Email"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:54
+#: includes/Frontend/Strings.php:68
+#: build/admin.js:1
+msgid "Phone"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:72
+#: includes/Frontend/Strings.php:102
+#: includes/Notify/Mailer.php:133
+msgid "Reference"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:76
+#: includes/Frontend/Strings.php:76
+#: includes/Notify/Mailer.php:128
+#: build/admin.js:1
+#: build/blocks.js:1
+msgid "Service"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:80
+#: includes/Frontend/Strings.php:79
+#: includes/Payments/Woo.php:193
+#: includes/Payments/Woo.php:288
+#: build/admin.js:1
+msgid "When"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:84
+#: build/admin.js:1
+msgid "Status"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:88
+#: build/admin.js:1
+msgid "Notes"
+msgstr ""
+
+#: includes/Data/Personal_Data.php:123
+msgid "Deleted customer"
+msgstr ""
+
+#: includes/Data/Services.php:133
+#: includes/Data/Services.php:198
+msgid "Give the service a name."
+msgstr ""
+
+#: includes/Data/Services.php:193
+msgid "Service not found."
+msgstr ""
+
+#: includes/Data/Staff.php:222
+#: includes/Data/Staff.php:281
+msgid "Enter the staff member's name."
+msgstr ""
+
+#: includes/Frontend/Account.php:37
+msgid "Please enable JavaScript to manage your bookings."
+msgstr ""
+
+#: includes/Frontend/Pages.php:29
+#: includes/Frontend/Strings.php:133
+msgid "Book an appointment"
+msgstr ""
+
+#: includes/Frontend/Pages.php:30
+#: includes/Frontend/Strings.php:104
+#: build/blocks.js:1
+msgid "My bookings"
+msgstr ""
+
+#: includes/Frontend/Strings.php:26
+msgid "Loading…"
+msgstr ""
+
+#: includes/Frontend/Strings.php:27
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/Frontend/Strings.php:28
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: includes/Frontend/Strings.php:29
+msgid "Back"
+msgstr ""
+
+#: includes/Frontend/Strings.php:30
+msgid "Continue"
+msgstr ""
+
+#. translators: 1: step number, 2: number of steps.
+#: includes/Frontend/Strings.php:32
+#, php-format
+msgid "Step %1$d of %2$d"
+msgstr ""
+
+#: includes/Frontend/Strings.php:33
+msgid "Choose a service"
+msgstr ""
+
+#: includes/Frontend/Strings.php:34
+#: build/admin.js:1
+msgid "All"
+msgstr ""
+
+#: includes/Frontend/Strings.php:35
+msgid "Online booking is not available right now."
+msgstr ""
+
+#: includes/Frontend/Strings.php:36
+msgid "Who would you like to see?"
+msgstr ""
+
+#: includes/Frontend/Strings.php:37
+#: build/admin.js:1
+msgid "Any available"
+msgstr ""
+
+#: includes/Frontend/Strings.php:38
+msgid "Most choice of times"
+msgstr ""
+
+#: includes/Frontend/Strings.php:39
+msgid "Pick a date and time"
+msgstr ""
+
+#: includes/Frontend/Strings.php:40
+msgid "Tell us when suits you"
+msgstr ""
+
+#: includes/Frontend/Strings.php:41
+msgid "e.g. \"Tuesday after 5 with Anna\""
+msgstr ""
+
+#: includes/Frontend/Strings.php:42
+#: build/admin.js:1
+msgid "Find times"
+msgstr ""
+
+#: includes/Frontend/Strings.php:43
+msgid "Looking for free times…"
+msgstr ""
+
+#. translators: %s: summary of the request.
+#: includes/Frontend/Strings.php:45
+#, php-format
+msgid "Free times for: %s"
+msgstr ""
+
+#: includes/Frontend/Strings.php:46
+msgid "No exact match. The nearest free times are:"
+msgstr ""
+
+#: includes/Frontend/Strings.php:47
+msgid "No free times match that. Try another day or time."
+msgstr ""
+
+#: includes/Frontend/Strings.php:48
+msgid "Clear"
+msgstr ""
+
+#: includes/Frontend/Strings.php:49
+msgid "or choose a date"
+msgstr ""
+
+#: includes/Frontend/Strings.php:50
+msgid "Morning"
+msgstr ""
+
+#: includes/Frontend/Strings.php:51
+msgid "Afternoon"
+msgstr ""
+
+#: includes/Frontend/Strings.php:52
+msgid "Evening"
+msgstr ""
+
+#: includes/Frontend/Strings.php:53
+msgid "No free times on this day."
+msgstr ""
+
+#. translators: %s: date.
+#: includes/Frontend/Strings.php:55
+#, php-format
+msgid "Next free day: %s"
+msgstr ""
+
+#: includes/Frontend/Strings.php:56
+msgid "There are no free times in the coming weeks."
+msgstr ""
+
+#: includes/Frontend/Strings.php:57
+msgid "Earlier dates"
+msgstr ""
+
+#: includes/Frontend/Strings.php:58
+msgid "Later dates"
+msgstr ""
+
+#. translators: %s: time zone name.
+#: includes/Frontend/Strings.php:60
+#, php-format
+msgid "Times shown in %s"
+msgstr ""
+
+#: includes/Frontend/Strings.php:61
+msgid "Change"
+msgstr ""
+
+#: includes/Frontend/Strings.php:62
+#: build/admin.js:1
+msgid "Time zone"
+msgstr ""
+
+#: includes/Frontend/Strings.php:63
+#: build/admin.js:1
+msgid "Today"
+msgstr ""
+
+#: includes/Frontend/Strings.php:64
+msgid "Tomorrow"
+msgstr ""
+
+#: includes/Frontend/Strings.php:65
+msgid "Your details"
+msgstr ""
+
+#: includes/Frontend/Strings.php:66
+msgid "Full name"
+msgstr ""
+
+#: includes/Frontend/Strings.php:69
+msgid "(optional)"
+msgstr ""
+
+#: includes/Frontend/Strings.php:70
+msgid "Anything we should know?"
+msgstr ""
+
+#: includes/Frontend/Strings.php:74
+#: build/admin.js:1
+msgid "Payment"
+msgstr ""
+
+#: includes/Frontend/Strings.php:75
+msgid "Review and confirm"
+msgstr ""
+
+#: includes/Frontend/Strings.php:77
+#: includes/Notify/Mailer.php:129
+#: includes/Payments/Woo.php:198
+#: includes/Payments/Woo.php:290
+msgid "With"
+msgstr ""
+
+#: includes/Frontend/Strings.php:78
+#: includes/Notify/Mailer.php:132
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: includes/Frontend/Strings.php:80
+#: build/admin.js:1
+msgid "Price"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/Frontend/Strings.php:82
+#, php-format
+msgid "Deposit due now: %s"
+msgstr ""
+
+#. translators: %d: minutes.
+#: includes/Frontend/Strings.php:85
+#: includes/Notify/Mailer.php:42
+#: build/admin.js:1
+#, php-format,js-format
+msgid "%d min"
+msgstr ""
+
+#. translators: %d: number of free places.
+#: includes/Frontend/Strings.php:87
+#, php-format
+msgid "%d spots left"
+msgstr ""
+
+#: includes/Frontend/Strings.php:88
+msgid "Confirm booking"
+msgstr ""
+
+#: includes/Frontend/Strings.php:89
+msgid "Continue to payment"
+msgstr ""
+
+#: includes/Frontend/Strings.php:90
+msgid "Booking…"
+msgstr ""
+
+#: includes/Frontend/Strings.php:91
+msgid "Taking you to payment…"
+msgstr ""
+
+#: includes/Frontend/Strings.php:92
+msgid "You're booked!"
+msgstr ""
+
+#: includes/Frontend/Strings.php:93
+msgid "Request received"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/Frontend/Strings.php:95
+#, php-format
+msgid "We sent the details to %s."
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/Frontend/Strings.php:97
+#, php-format
+msgid "We will confirm your booking shortly and email %s."
+msgstr ""
+
+#: includes/Frontend/Strings.php:98
+#: includes/Notify/Mailer.php:144
+msgid "Add to Google Calendar"
+msgstr ""
+
+#: includes/Frontend/Strings.php:99
+msgid "Download .ics"
+msgstr ""
+
+#: includes/Frontend/Strings.php:100
+#: includes/Notify/Mailer.php:142
+msgid "Manage booking"
+msgstr ""
+
+#: includes/Frontend/Strings.php:101
+msgid "Book another"
+msgstr ""
+
+#: includes/Frontend/Strings.php:103
+msgid "Cancellation policy"
+msgstr ""
+
+#: includes/Frontend/Strings.php:105
+#: build/admin.js:1
+msgid "Upcoming"
+msgstr ""
+
+#: includes/Frontend/Strings.php:106
+msgid "Past"
+msgstr ""
+
+#: includes/Frontend/Strings.php:107
+msgid "You have no bookings yet."
+msgstr ""
+
+#: includes/Frontend/Strings.php:108
+msgid "No upcoming bookings."
+msgstr ""
+
+#: includes/Frontend/Strings.php:109
+msgid "Open the link in your confirmation email to view, reschedule or cancel a booking, or log in to see all your bookings."
+msgstr ""
+
+#: includes/Frontend/Strings.php:110
+msgid "Log in"
+msgstr ""
+
+#: includes/Frontend/Strings.php:111
+msgid "All bookings"
+msgstr ""
+
+#: includes/Frontend/Strings.php:112
+#: build/admin.js:1
+msgid "Reschedule"
+msgstr ""
+
+#: includes/Frontend/Strings.php:113
+#: build/admin.js:1
+msgid "Cancel booking"
+msgstr ""
+
+#: includes/Frontend/Strings.php:114
+#: build/admin.js:1
+msgid "Keep booking"
+msgstr ""
+
+#: includes/Frontend/Strings.php:115
+#: build/admin.js:1
+msgid "Cancel this booking?"
+msgstr ""
+
+#: includes/Frontend/Strings.php:116
+msgid "Reason (optional)"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/Frontend/Strings.php:118
+#, php-format
+msgid "%s will be refunded to your card."
+msgstr ""
+
+#: includes/Frontend/Strings.php:119
+msgid "Payments are not refunded this close to the appointment."
+msgstr ""
+
+#: includes/Frontend/Strings.php:120
+msgid "Your booking was cancelled."
+msgstr ""
+
+#: includes/Frontend/Strings.php:121
+msgid "Your booking was moved."
+msgstr ""
+
+#: includes/Frontend/Strings.php:122
+msgid "Pick a new time"
+msgstr ""
+
+#. translators: %s: date.
+#: includes/Frontend/Strings.php:124
+#, php-format
+msgid "Move to %s"
+msgstr ""
+
+#: includes/Frontend/Strings.php:125
+msgid "Payment received. Thank you!"
+msgstr ""
+
+#: includes/Frontend/Strings.php:126
+msgid "We are waiting for your payment to be confirmed."
+msgstr ""
+
+#: includes/Frontend/Strings.php:127
+msgid "Payment was not completed. You can book again."
+msgstr ""
+
+#: includes/Frontend/Strings.php:128
+msgid "Online changes are not available for this booking. Please contact us."
+msgstr ""
+
+#: includes/Frontend/Strings.php:129
+#: build/admin.js:1
+msgid "Paid"
+msgstr ""
+
+#: includes/Frontend/Strings.php:130
+msgid "To pay at the appointment"
+msgstr ""
+
+#: includes/Frontend/Strings.php:131
+#: build/admin.js:1
+msgid "Refunded"
+msgstr ""
+
+#: includes/Frontend/Strings.php:132
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: includes/Frontend/Strings.php:134
+msgid "Selected"
+msgstr ""
+
+#: includes/Frontend/Widget.php:114
+msgid "Please enable JavaScript to book an appointment."
+msgstr ""
+
+#. translators: %s: booking reference.
+#: includes/Notify/Ics.php:110
+#, php-format
+msgid "Reference: %s"
+msgstr ""
+
+#: includes/Notify/Mailer.php:70
+msgid "Haircut & styling"
+msgstr ""
+
+#: includes/Notify/Mailer.php:75
+msgid "45 min"
+msgstr ""
+
+#: includes/Notify/Mailer.php:131
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#. translators: 1: template label, 2: address.
+#: includes/Notify/Mailer.php:206
+#, php-format
+msgid "Email \"%1$s\" sent to %2$s."
+msgstr ""
+
+#. translators: 1: template label, 2: address.
+#: includes/Notify/Mailer.php:206
+msgid "(failed)"
+msgstr ""
+
+#: includes/Notify/Reminders.php:49
+msgid "Every 5 minutes"
+msgstr ""
+
+#: includes/Notify/Templates.php:28
+msgid "See you soon,"
+msgstr ""
+
+#: includes/Notify/Templates.php:31
+msgid "Booking confirmed"
+msgstr ""
+
+#: includes/Notify/Templates.php:35
+msgid "Your booking is confirmed: {service} on {date}"
+msgstr ""
+
+#: includes/Notify/Templates.php:36
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Your {service} with {staff} is confirmed for {date} at {time} ({timezone}).\n"
+"\n"
+"Need to change something? Manage your booking here: {manage_url}"
+msgstr ""
+
+#: includes/Notify/Templates.php:39
+msgid "Booking received (pending approval)"
+msgstr ""
+
+#: includes/Notify/Templates.php:43
+msgid "We received your booking request: {service} on {date}"
+msgstr ""
+
+#: includes/Notify/Templates.php:44
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Thanks for your request for {service} on {date} at {time} ({timezone}). We will confirm it shortly.\n"
+"\n"
+"Your booking: {manage_url}"
+msgstr ""
+
+#: includes/Notify/Templates.php:47
+msgid "Booking rescheduled"
+msgstr ""
+
+#: includes/Notify/Templates.php:51
+msgid "Your booking has moved: {service} on {date}"
+msgstr ""
+
+#: includes/Notify/Templates.php:52
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Your {service} with {staff} is now on {date} at {time} ({timezone}).\n"
+"\n"
+"Manage your booking: {manage_url}"
+msgstr ""
+
+#: includes/Notify/Templates.php:55
+msgid "Booking cancelled"
+msgstr ""
+
+#: includes/Notify/Templates.php:59
+msgid "Your booking was cancelled: {service} on {date}"
+msgstr ""
+
+#: includes/Notify/Templates.php:60
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Your {service} on {date} at {time} has been cancelled. We hope to see you another time."
+msgstr ""
+
+#: includes/Notify/Templates.php:63
+msgid "Reminder 1"
+msgstr ""
+
+#: includes/Notify/Templates.php:67
+msgid "Reminder: {service} on {date} at {time}"
+msgstr ""
+
+#: includes/Notify/Templates.php:68
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"This is a friendly reminder of your {service} with {staff} on {date} at {time} ({timezone}).\n"
+"\n"
+"Can't make it? Please reschedule or cancel here so someone else can take the slot: {manage_url}"
+msgstr ""
+
+#: includes/Notify/Templates.php:71
+msgid "Reminder 2"
+msgstr ""
+
+#: includes/Notify/Templates.php:75
+msgid "See you soon: {service} at {time}"
+msgstr ""
+
+#: includes/Notify/Templates.php:76
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Your {service} with {staff} starts at {time} today. {location}\n"
+"\n"
+"Running late or need to change? {manage_url}"
+msgstr ""
+
+#: includes/Notify/Templates.php:79
+msgid "Follow-up after the visit"
+msgstr ""
+
+#: includes/Notify/Templates.php:83
+msgid "Thanks for visiting {site_name}"
+msgstr ""
+
+#: includes/Notify/Templates.php:84
+msgid ""
+"Hi {customer_name},\n"
+"\n"
+"Thank you for your {service} with {staff}. We would love to see you again."
+msgstr ""
+
+#: includes/Notify/Templates.php:87
+msgid "New booking (admin & staff)"
+msgstr ""
+
+#: includes/Notify/Templates.php:91
+msgid "New booking {ref}: {service} on {date} at {time}"
+msgstr ""
+
+#: includes/Notify/Templates.php:92
+msgid ""
+"New booking {ref}\n"
+"\n"
+"Customer: {customer_name}\n"
+"Service: {service}\n"
+"Staff: {staff}\n"
+"When: {date} at {time} ({timezone})\n"
+"Price: {price}"
+msgstr ""
+
+#: includes/Notify/Templates.php:95
+msgid "Booking cancelled (admin & staff)"
+msgstr ""
+
+#: includes/Notify/Templates.php:99
+msgid "Cancelled {ref}: {service} on {date}"
+msgstr ""
+
+#: includes/Notify/Templates.php:100
+msgid ""
+"Booking {ref} was cancelled.\n"
+"\n"
+"Customer: {customer_name}\n"
+"Service: {service}\n"
+"Staff: {staff}\n"
+"When: {date} at {time} ({timezone})"
+msgstr ""
+
+#: includes/Notify/Templates.php:103
+msgid "Booking rescheduled (admin & staff)"
+msgstr ""
+
+#: includes/Notify/Templates.php:107
+msgid "Moved {ref}: {service} now on {date} at {time}"
+msgstr ""
+
+#: includes/Notify/Templates.php:108
+msgid ""
+"Booking {ref} was rescheduled.\n"
+"\n"
+"Customer: {customer_name}\n"
+"Service: {service}\n"
+"Staff: {staff}\n"
+"New time: {date} at {time} ({timezone})"
+msgstr ""
+
+#: includes/Notify/Templates.php:219
+msgid "Subject and message cannot be empty."
+msgstr ""
+
+#. translators: %s: placeholder list.
+#: includes/Notify/Templates.php:224
+#, php-format
+msgid "Keep these placeholders in the message: %s"
+msgstr ""
+
+#: includes/Payments/Payments.php:62
+msgid "Pay now by card"
+msgstr ""
+
+#: includes/Payments/Payments.php:63
+msgid "Pay now at checkout"
+msgstr ""
+
+#: includes/Payments/Payments.php:64
+#: build/admin.js:1
+msgid "Pay at the appointment"
+msgstr ""
+
+#: includes/Payments/Payments.php:65
+msgid "No payment needed"
+msgstr ""
+
+#: includes/Payments/Payments.php:92
+msgid "Payment could not start."
+msgstr ""
+
+#: includes/Payments/Payments.php:93
+msgid "Payment could not start. Please try again or choose another payment option."
+msgstr ""
+
+#: includes/Payments/Payments.php:111
+msgid "Nothing to refund."
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/Payments/Payments.php:131
+#, php-format
+msgid "Refunded %s."
+msgstr ""
+
+#: includes/Payments/Stripe.php:111
+msgid "The publishable key should start with pk_test_ or pk_live_."
+msgstr ""
+
+#: includes/Payments/Stripe.php:127
+msgid "The secret key should start with sk_test_ or sk_live_."
+msgstr ""
+
+#: includes/Payments/Stripe.php:127
+msgid "The webhook secret should start with whsec_."
+msgstr ""
+
+#: includes/Payments/Stripe.php:158
+msgid "Stripe is not connected. Add your secret key in Settings → Payments."
+msgstr ""
+
+#: includes/Payments/Stripe.php:179
+msgid "Could not reach Stripe. Please try again."
+msgstr ""
+
+#: includes/Payments/Stripe.php:184
+msgid "Stripe returned an error."
+msgstr ""
+
+#. translators: %s: name.
+#: includes/Payments/Stripe.php:204
+#, php-format
+msgid "Deposit: %s"
+msgstr ""
+
+#: includes/Payments/Stripe.php:236
+msgid "Stripe did not return a checkout page."
+msgstr ""
+
+#: includes/Payments/Stripe.php:239
+msgid "Stripe checkout started."
+msgstr ""
+
+#: includes/Payments/Stripe.php:279
+msgid "Stripe checkout expired; the time was released."
+msgstr ""
+
+#: includes/Payments/Stripe.php:332
+msgid "Invalid signature."
+msgstr ""
+
+#: includes/Payments/Stripe.php:344
+msgid "Refund confirmed by Stripe."
+msgstr ""
+
+#: includes/Payments/Stripe.php:362
+msgid "No Stripe payment found for this booking."
+msgstr ""
+
+#: includes/Payments/Woo.php:96
+msgid "WooCommerce is not active."
+msgstr ""
+
+#: includes/Payments/Woo.php:102
+msgid "The cart is not available."
+msgstr ""
+
+#: includes/Payments/Woo.php:115
+msgid "Could not add the appointment to the cart."
+msgstr ""
+
+#: includes/Payments/Woo.php:121
+msgid "Added to the WooCommerce cart for checkout."
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/Payments/Woo.php:171
+#, php-format
+msgid "%s (deposit)"
+msgstr ""
+
+#: includes/Payments/Woo.php:203
+#: includes/Payments/Woo.php:292
+#: build/admin.js:1
+msgid "Booking"
+msgstr ""
+
+#: includes/Payments/Woo.php:264
+msgid "Your appointment hold expired, so it was removed from the cart. Please book a new time."
+msgstr ""
+
+#. translators: %d: order id.
+#: includes/Payments/Woo.php:352
+#, php-format
+msgid "Order #%d is on hold; the time is kept until payment arrives."
+msgstr ""
+
+#. translators: %d: order id.
+#: includes/Payments/Woo.php:377
+#, php-format
+msgid "Order #%d was cancelled or failed; the time was released."
+msgstr ""
+
+#: includes/Payments/Woo.php:397
+msgid "The WooCommerce order was refunded."
+msgstr ""
+
+#: includes/Payments/Woo.php:412
+msgid "No WooCommerce order found for this booking."
+msgstr ""
+
+#. translators: %s: booking reference.
+#: includes/Payments/Woo.php:421
+#, php-format
+msgid "Booking %s cancelled"
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:124
+msgid "Booking not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:524
+msgid "Unknown bulk action."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:573
+msgid "Notes updated."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:633
+msgid "Unknown payment action."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:650
+msgid "Choose a customer email."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:653
+msgid "That email is turned off in Notifications."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:662
+msgid "The email could not be sent. Check your site's email settings."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:821
+#: includes/Rest/Admin_Controller.php:845
+msgid "Customer not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:922
+msgid "The test email could not be sent (is the template turned on?)."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:210
+msgid "Please try again."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:262
+msgid "We could not find that booking. Check the link in your email."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:354
+msgid "Calendar not found."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:369
+msgid "Please log in to see your bookings."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3BK_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3BK_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unpaid"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tuesday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Wednesday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Thursday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Friday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Saturday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sunday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No-show risk"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add your services"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add staff and their working hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Publish the booking page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect online payments for services that require them"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set the business email for notifications"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Today at a glance, approvals and bookings that may need a nudge."
+msgstr ""
+
+#: build/admin.js:1
+msgid "View booking page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New booking"
+msgstr ""
+
+#: build/admin.js:1
+msgid "appointments"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "booked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Revenue (30 days)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "paid online or marked paid"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No-show rate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Finish setting up"
+msgstr ""
+
+#. translators: 1: done, 2: total.
+#: build/admin.js:1
+#, js-format
+msgid "%1$d of %2$d done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open calendar"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing booked today"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New online bookings appear here as they come in."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Waiting for approval"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests stay pending until you confirm them."
+msgstr ""
+
+#: build/admin.js:1
+msgid "All caught up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI · No-show watch"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upcoming bookings (14 days) with a high no-show risk score. Open one for the reasons and a suggested nudge."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No high-risk bookings right now."
+msgstr ""
+
+#: build/admin.js:1
+msgid "High risk"
+msgstr ""
+
+#: build/admin.js:1
+msgid "High no-show risk"
+msgstr ""
+
+#. translators: 1: column label, 2: time.
+#: build/admin.js:1
+#, js-format
+msgid "New booking: %1$s at %2$s"
+msgstr ""
+
+#. translators: 1: date, 2: count.
+#: build/admin.js:1
+#, js-format
+msgid "%1$s, %2$d booking"
+msgid_plural "%1$s, %2$d bookings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count.
+#: build/admin.js:1
+#, js-format
+msgid "+%d more"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No bookings this day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No bookings."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No staff yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add staff members to see their day."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add staff"
+msgstr ""
+
+#. translators: %s: timezone.
+#: build/admin.js:1
+#, js-format
+msgid "All times in %s."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Find a slot with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next"
+msgstr ""
+
+#. translators: %d: count.
+#: build/admin.js:1
+#, js-format
+msgid "%d booking"
+msgid_plural "%d bookings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin.js:1
+msgid "Calendar view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Week"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All staff"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All services"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Colour by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Colour by staff"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Colour by service"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pending"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No-shows"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customer"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search, filter and manage every appointment."
+msgstr ""
+
+#. translators: %d: count.
+#: build/admin.js:1
+#, js-format
+msgid "%d bookings updated."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirm all shown"
+msgstr ""
+
+#. translators: %d: rows.
+#: build/admin.js:1
+#, js-format
+msgid "Exported %d bookings."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Export CSV"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search ref, name, email, phone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Any payment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From"
+msgstr ""
+
+#: build/admin.js:1
+msgid "To"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking updated."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirm"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No bookings match"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Change the filters or create a booking."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit service"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New service"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save service"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Service saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Category"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Groups services in the booking widget."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Description"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Duration (minutes)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "0 = free."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Deposit (%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "0 = full price online."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Capacity (seats per slot)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "More than 1 makes it a group class."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Buffer before (min)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Buffer after (min)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Slot step (min)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "0 = use the default in Settings."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Minimum notice (min)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "-1 = use the default."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Book up to (days ahead)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Online payment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Optional (online or pay later)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Required (online only)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off (pay at the appointment)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Location"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Address, room or video link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Who performs it"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add staff first, then link them here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Visibility"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bookable online"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hidden (admin bookings only)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort order"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Duration"
+msgstr ""
+
+#: build/admin.js:1
+msgid "deposit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Seats"
+msgstr ""
+
+#. translators: %d: seats.
+#: build/admin.js:1
+#, js-format
+msgid "Group · %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No staff"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bookable"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hidden"
+msgstr ""
+
+#: build/admin.js:1
+msgid "What customers can book: duration, price, deposits, group capacity and buffers."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No services yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create your first service, then link the staff who perform it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this service?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Services with bookings are archived instead, so their history stays intact."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Keep it"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Service removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Closed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "break start"
+msgstr ""
+
+#: build/admin.js:1
+msgid "from"
+msgstr ""
+
+#: build/admin.js:1
+msgid "break end"
+msgstr ""
+
+#: build/admin.js:1
+msgid "to"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add break"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Copy Monday to Tuesday–Friday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "all day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No time off or special days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No closures or holidays"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Special hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "every year"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Closed / holiday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Special working hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Leave empty for one day."
+msgstr ""
+
+#: build/admin.js:1
+msgid "All day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start"
+msgstr ""
+
+#: build/admin.js:1
+msgid "End"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. Christmas, Training, Holiday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Repeat every year"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Added."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add special hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add time off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Business time zone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New staff member"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Staff member saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Staff sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Profile"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Working hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Calendar feed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Gets new-booking emails (private)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Short bio (shown in the booking widget)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Calendar colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Active"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inactive (not bookable)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use the business hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to give this person their own weekly hours and breaks."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Weekly hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Breaks"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Repeating breaks such as lunch."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Private calendar feed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Subscribe in Google Calendar (\"From URL\"), Apple Calendar or Outlook to see this person's bookings. Keep the link private."
+msgstr ""
+
+#: build/admin.js:1
+msgid "iCal URL"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Copied."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Copy link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New calendar link created. The old one stopped working."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a new link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save first to add time off."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Business hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Business"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inactive"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Who can be booked, their services, hours, breaks, time off and calendar feed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add the people (or rooms/resources) customers book."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove this staff member?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "People with bookings are archived so their history stays intact."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Keep"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Staff member removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Schedule"
+msgstr ""
+
+#. translators: %s: timezone.
+#: build/admin.js:1
+#, js-format
+msgid "Default opening hours, breaks, closures and holidays (%s). Staff who use the business hours follow these."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Business hours saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save hours"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Applied every week, e.g. a lunch break."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Closures, holidays and special days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Apply to every staff member. Special hours replace the weekly hours for those dates."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customer saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Private notes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "History"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No bookings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Everyone who booked, with their history and no-show record."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search customers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search name, email or phone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last booking"
+msgstr ""
+
+#. translators: %s: search.
+#: build/admin.js:1
+#, js-format
+msgid "No customers match \"%s\""
+msgstr ""
+
+#: build/admin.js:1
+msgid "No customers yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customers are added automatically when they book."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customer emails"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminders & follow-up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Admin & staff emails"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI copy approved and saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Template saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sent to the business email and the staff member."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sent to the customer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reset to default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Subject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Message"
+msgstr ""
+
+#. translators: %s: placeholders.
+#: build/admin.js:1
+#, js-format
+msgid "Required: %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Insert a placeholder"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Write with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get fresh copy that keeps the placeholders. You review it; nothing is sent until you approve it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Friendly"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Professional"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Warm"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Concise"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Playful"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Luxury"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Length"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Short"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Medium"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Long"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Language"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Site language"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Extra instructions (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. mention free parking, ask to arrive 5 minutes early"
+msgstr ""
+
+#. translators: %s: placeholders.
+#: build/admin.js:1
+#, js-format
+msgid "The draft is missing %s. Add it before approving."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Approve & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Subject:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Email preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send a test to"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your email"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sends the saved version with sample values."
+msgstr ""
+
+#. translators: %s: email.
+#: build/admin.js:1
+#, js-format
+msgid "Test sent to %s."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send test email"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Emails and reminders. Only the approved text you see here is ever sent."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminder timing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminders go out once per booking. 0 turns one off. Bookings made inside a window skip that reminder."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminder settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save timing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminder 1 (hours before)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminder 2 (hours before)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Follow-up (hours after)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Also turn on the follow-up email below."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Email the business on new bookings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Email the staff member"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI copy"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edited"
+msgstr ""
+
+#. translators: %s: email name.
+#: build/admin.js:1
+#, js-format
+msgid "Send \"%s\""
+msgstr ""
+
+#: build/admin.js:1
+msgid "Stripe"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customers pay on Stripe's secure checkout page. Keys are stored encrypted and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Test mode"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not connected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Stripe keys saved (encrypted)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save Stripe keys"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Publishable key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Secret key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Webhook signing secret"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Optional but recommended: confirms payments even if the customer closes the tab."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Webhook endpoint"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Events:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking rules, policies, payments and the booking widget."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "General"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking rules"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Policies"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Payments"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Widget & pages"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI & data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Business name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Site title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Business email"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Receives booking notifications; used as Reply-To."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Same as WordPress"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time format"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Week starts on"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Defaults; each service can override them."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Slot step (minutes)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Minimum notice (minutes)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New online bookings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirm automatically"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Wait for my approval"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hold unpaid bookings for (minutes)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Stripe holds at least 35 minutes, WooCommerce 60."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Phone number"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Optional"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Required"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Ask for notes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancellation & rescheduling"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customers change bookings from their manage link or account. Admins are never limited."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Allow online cancellation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Allow online rescheduling"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancel up to (hours before)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reschedule up to (hours before)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max reschedules per booking"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Full refund if cancelled (hours before)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refund Stripe payments automatically"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inside the refund window only."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Policy text shown to customers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Leave empty to generate it from the rules above."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Payment methods"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Stripe checkout"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WooCommerce checkout"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Uses your WooCommerce gateways, taxes and emails."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Install and activate WooCommerce to use it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Currency (ISO code)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WooCommerce's currency is used while WooCommerce checkout is on."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking widget"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add the \"Booking form\" block or the [dev3bk_booking] shortcode to any page. Options: service, staff, category."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accent colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pages"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The account page is where emailed \"Manage booking\" links land."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pages are ready."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create missing pages"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking page ID"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Account page ID"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect your Google Gemini key in API Config. Everything keeps working with AI off."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Natural-language booking (\"Tuesday after 5 with Anna\")"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shown in the widget. Without a key, a built-in rule parser answers instead. Only real free times are ever offered."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No-show risk hint"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adds a plain-language explanation and suggested nudge to the rule-based risk score."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete all booking data when the plugin is uninstalled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No free times this day. Pick another day or override below."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Free times"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Override availability (double-booking allowed)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "In the business time zone. Staff is required."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a service and a day to see free times."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking confirmed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Marked as completed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Marked as no-show."
+msgstr ""
+
+#. translators: %s: booking reference.
+#: build/admin.js:1
+#, js-format
+msgid "Booking %s"
+msgstr ""
+
+#. translators: %d: score.
+#: build/admin.js:1
+#, js-format
+msgid "No-show risk %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booked via DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only free times are offered unless you override. The customer receives the new time and an updated calendar file."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking moved. The customer was emailed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move booking"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Their time zone"
+msgstr ""
+
+#. translators: %d: seats.
+#: build/admin.js:1
+#, js-format
+msgid "%d seats"
+msgstr ""
+
+#. translators: %s: amount.
+#: build/admin.js:1
+#, js-format
+msgid "deposit %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No payment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pay at appointment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WooCommerce"
+msgstr ""
+
+#. translators: %d: order number.
+#: build/admin.js:1
+#, js-format
+msgid "Order #%d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Marked as paid."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mark as paid"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refund recorded."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refund via Stripe"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Record refund"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Email sent."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resend confirmation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reminder sent."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send reminder now"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customer page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI · No-show risk hint"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A hint for you only. Nothing changes automatically."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low risk"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Medium risk"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggested nudge"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Thinking…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Explain with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Notes saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save notes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Notes (customer and internal)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Timeline"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The time is released and the customer is emailed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reason (shown in the timeline)"
+msgstr ""
+
+#. translators: %s: amount.
+#: build/admin.js:1
+#, js-format
+msgid "Refund %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refunded to the card through Stripe."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recorded on the booking (and as a WooCommerce refund for checkout payments)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Describe it like a customer would: \"Tuesday after 5 with Anna\". Only real free times are suggested."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. next Friday morning with Ben"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Searching…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Which service? Choose one below or name it in the request."
+msgstr ""
+
+#. translators: %s: summary.
+#: build/admin.js:1
+#, js-format
+msgid "Looking for: %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(rule parser — AI off or unavailable)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No exact match. Nearest free times:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No free times found in the booking window."
+msgstr ""
+
+#. translators: %s: reference.
+#: build/admin.js:1
+#, js-format
+msgid "Booking %s created."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create booking"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Describe the time instead (DEV3 AI)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "hidden"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Existing customer"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New customer"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search by name, email or phone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Matching customers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Already paid"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Email the customer and staff"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Booking form"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "A mobile-friendly, multi-step appointment booking form."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "appointment"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "booking"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "schedule"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Booking options"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Let the customer choose"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Only this category"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Customers pick a service, staff member, date and time, then confirm. Preview the page to try it."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Customers view, reschedule and cancel their appointments."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Logged-in customers see their bookings; emailed links open a single booking."
+msgstr ""

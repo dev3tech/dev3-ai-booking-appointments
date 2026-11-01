@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Booking &amp; Appointments for WordPress: Documentation</title>
+<style>
+:root { --brand: #4f46e5; --text: #1f2328; --muted: #4b5563; --line: #e3e6eb; --soft: #f6f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fff; }
+header { background: linear-gradient(135deg, #4f46e5, #0891b2); color: #fff; padding: 40px 16px; }
+header .wrap, main { max-width: 980px; margin: 0 auto; }
+header h1 { margin: 0 0 6px; font-size: clamp(24px, 4vw, 34px); }
+header p { margin: 0; opacity: .9; }
+nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap; padding: 0 16px; z-index: 2; }
+nav a { display: inline-block; padding: 12px 10px; color: var(--muted); text-decoration: none; font-size: 14px; }
+nav a:hover, nav a:focus { color: var(--brand); }
+main { padding: 8px 16px 64px; }
+h2 { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 24px; }
+h3 { margin-top: 28px; font-size: 18px; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; }
+code { background: var(--soft); padding: 2px 6px; border-radius: 4px; }
+pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; }
+pre code { background: none; padding: 0; color: inherit; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; display: block; overflow-x: auto; }
+th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { background: var(--soft); }
+.note { background: #eef2ff; border-left: 4px solid var(--brand); padding: 12px 16px; border-radius: 6px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.shots figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.shots img { width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; }
+.shots figcaption { padding: 8px 12px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+	<h1>DEV3 AI Booking &amp; Appointments for WordPress</h1>
+	<p>Version 1.0.0 · Services, staff, schedules, a mobile-first booking widget, Stripe / WooCommerce / pay-later payments, reminders and an admin calendar, with DEV3 AI natural-language booking.</p>
+</div></header>
+<nav aria-label="Sections">
+	<a href="#install">Install</a><a href="#quick">Quick start</a><a href="#services">Services</a><a href="#staff">Staff &amp; schedules</a><a href="#availability">Availability rules</a><a href="#widget">Booking widget</a><a href="#payments">Payments</a><a href="#account">Customer area</a><a href="#emails">Emails &amp; reminders</a><a href="#calendar">Admin calendar</a><a href="#ai">DEV3 AI</a><a href="#gemini">Gemini key</a><a href="#privacy">Privacy</a><a href="#hooks">Hooks</a><a href="#rest">REST API</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a>
+</nav>
+<main>
+
+<div class="shots">
+	<figure><img src="screenshots/1-dashboard.png" alt="Dashboard"><figcaption>Dashboard with no-show watch</figcaption></figure>
+	<figure><img src="screenshots/2-calendar-month.png" alt="Month calendar"><figcaption>Admin calendar · month</figcaption></figure>
+	<figure><img src="screenshots/3-calendar-week.png" alt="Week calendar"><figcaption>Admin calendar · week</figcaption></figure>
+	<figure><img src="screenshots/4-no-show-risk-hint.png" alt="No-show risk hint"><figcaption>DEV3 AI no-show risk hint</figcaption></figure>
+	<figure><img src="screenshots/5-ai-reminder-copy.png" alt="AI reminder copy"><figcaption>DEV3 AI reminder copy, reviewed before saving</figcaption></figure>
+	<figure><img src="screenshots/6-widget-natural-language-mobile.png" alt="Widget on a phone"><figcaption>"Thursday after 5" on a phone</figcaption></figure>
+	<figure><img src="screenshots/7-widget-confirmation-mobile.png" alt="Confirmation"><figcaption>Confirmation with calendar links</figcaption></figure>
+</div>
+
+<h2 id="install">Installation</h2>
+<ol>
+	<li>Requirements: WordPress 6.0+, PHP 7.4+ (tested on 8.3). WooCommerce 8.0+ is optional (for checkout payments).</li>
+	<li><strong>Plugins › Add New › Upload Plugin</strong>, choose <code>dev3-ai-booking-appointments.zip</code>, install and activate.</li>
+	<li>Activation creates two pages: <strong>Book an appointment</strong> (Booking form block) and <strong>My bookings</strong> (My bookings block). Emailed "Manage booking" links open the My bookings page.</li>
+	<li>Open <strong>DEV3 AI Booking</strong> in the admin menu.</li>
+</ol>
+
+<h2 id="quick">Quick start</h2>
+<ol>
+	<li><strong>Schedule</strong>: set business hours, breaks and holidays.</li>
+	<li><strong>Services</strong>: add what customers book (duration, price, deposit, capacity, buffers).</li>
+	<li><strong>Staff</strong>: add people, tick their services, and use business hours or give them their own.</li>
+	<li><strong>Settings › General</strong>: business name, email and time zone. <strong>Settings › Payments</strong>: pick pay later, Stripe and/or WooCommerce.</li>
+	<li>Open the booking page on your phone and book a test appointment.</li>
+</ol>
+
+<h2 id="services">Services</h2>
+<table>
+<tr><th>Field</th><th>What it does</th></tr>
+<tr><td>Duration</td><td>Length of the appointment in real minutes (5–720).</td></tr>
+<tr><td>Price / Deposit (%)</td><td>0 = free (no payment step). A deposit takes that percentage online; the rest is due at the appointment.</td></tr>
+<tr><td>Capacity</td><td>1 = private appointment. More than 1 makes a group class: customers share seats at the same start time.</td></tr>
+<tr><td>Buffer before / after</td><td>Time kept free around the appointment (cleaning, travel). Buffers never overlap another booking of the same staff member.</td></tr>
+<tr><td>Slot step</td><td>How often start times are offered (e.g. every 15 min). 0 = the default in Settings.</td></tr>
+<tr><td>Minimum notice / book up to</td><td>How soon and how far ahead customers can book. -1 = the defaults.</td></tr>
+<tr><td>Online payment</td><td>Optional (online or pay later), Required (online only) or Off.</td></tr>
+<tr><td>Visibility</td><td>Hidden services can still be booked by admins.</td></tr>
+</table>
+<p>Services with bookings are archived (not deleted) so history stays intact.</p>
+
+<h2 id="staff">Staff &amp; schedules</h2>
+<ul>
+	<li><strong>Profile</strong>: name, private email (receives booking emails), phone, short bio and colour (shown in the widget and calendar), time zone.</li>
+	<li><strong>Working hours</strong>: use the business hours or set weekly hours (several ranges per day) and breaks.</li>
+	<li><strong>Time off</strong>: whole days or a time window, special working hours for a date (replaces the weekly hours), optional yearly repeat.</li>
+	<li><strong>Calendar feed</strong>: a private iCal URL to subscribe in Google, Apple or Outlook calendar. Create a new link at any time; the old one stops working.</li>
+	<li><strong>Schedule</strong> screen: business hours, breaks and closures/holidays for everyone.</li>
+</ul>
+
+<h2 id="availability">Availability rules</h2>
+<ul>
+	<li>Slots are aligned to the wall clock in the staff member's time zone (09:00, 09:15 …). Durations and buffers are real minutes.</li>
+	<li>Daylight saving: times that do not exist (clocks go forward) are skipped; repeated times (clocks go back) are offered once. A shift that spans the change keeps its real length.</li>
+	<li>Customers see times in their own time zone (detected in the browser, switchable). Dates are grouped by the customer's local day.</li>
+	<li>Unpaid online bookings hold their time for the hold period (Settings › Booking rules; at least 35 minutes for Stripe and 60 for WooCommerce), then expire.</li>
+	<li>Bookings are written under a database lock per staff member and re-checked, so two people cannot take the same time.</li>
+	<li>"Any available": the time is offered if anyone who performs the service is free; the person with the fewest bookings that day is assigned.</li>
+</ul>
+
+<h2 id="widget">Booking widget</h2>
+<p>Add the <strong>Booking form</strong> block, or the shortcode:</p>
+<pre><code>[dev3bk_booking]
+[dev3bk_booking service="3"]            preselect a service
+[dev3bk_booking service="3" staff="7"]  preselect a service and staff member
+[dev3bk_booking category="Hair"]        only one category</code></pre>
+<p>Steps: Service → Staff ("Any available" or a person) → Date &amp; time ("Tell us when suits you" plus a date strip and Morning/Afternoon/Evening slots) → Your details → Payment &amp; review → Confirmation with Google Calendar, .ics and manage links. Steps are skipped when there is only one choice. The widget is mobile-first with a sticky action bar, 44&nbsp;px targets, theme fonts and an accent colour (Settings › Widget). It loads only on pages that contain it (about 9&nbsp;KB of JavaScript gzipped).</p>
+
+<h2 id="payments">Payments</h2>
+<h3>Pay at the appointment</h3>
+<p>The booking is confirmed (or pending your approval) and marked unpaid. Mark it paid from the booking.</p>
+<h3>Stripe</h3>
+<ol>
+	<li>Settings › Payments: turn on Stripe and enter the publishable and secret keys (test keys start with <code>sk_test_</code>). Keys are stored encrypted.</li>
+	<li>In the Stripe dashboard add a webhook to the URL shown in Settings with the events <code>checkout.session.completed</code>, <code>checkout.session.expired</code> and <code>charge.refunded</code>, and paste the signing secret.</li>
+	<li>Customers pay on Stripe Checkout. The booking is confirmed when the payment succeeds (webhook, or the check when they return).</li>
+	<li>Customer cancellations inside the refund window are refunded automatically (Settings › Policies).</li>
+</ol>
+<h3>WooCommerce checkout</h3>
+<p>With WooCommerce active, turn on WooCommerce checkout. The appointment goes into the cart as a hidden "Appointment" product with the booking details, and your gateways, taxes and emails apply. Paid order → booking confirmed; on-hold (bank transfer) → kept as pending; cancelled/failed → time released; refunded → booking refunded. HPOS and the block cart/checkout are supported. Customers also get <strong>My Account › Appointments</strong>.</p>
+
+<h2 id="account">Customer area &amp; policies</h2>
+<p>The <strong>My bookings</strong> block (or <code>[dev3bk_my_bookings]</code>) lists a logged-in customer's bookings. Guests open one booking with the secure link in their email. Customers can reschedule (only real free times) and cancel, within the rules in <strong>Settings › Policies</strong>: cancel/reschedule cutoffs, maximum reschedules, refund window and optional policy text.</p>
+
+<h2 id="emails">Emails &amp; reminders</h2>
+<p><strong>Notifications</strong> lists every email: confirmation, pending approval, rescheduled, cancelled, reminder 1, reminder 2, follow-up, and admin/staff new/cancelled/rescheduled. Edit subject and message with placeholders:</p>
+<p><code>{customer_name}</code> <code>{service}</code> <code>{staff}</code> <code>{date}</code> <code>{time}</code> <code>{timezone}</code> <code>{duration}</code> <code>{location}</code> <code>{price}</code> <code>{amount_due}</code> <code>{ref}</code> <code>{manage_url}</code> <code>{ics_url}</code> <code>{google_url}</code> <code>{site_name}</code> <code>{policy}</code></p>
+<p>Customer emails attach an .ics file. Reminders run every 5 minutes (WP-Cron) and go out once per booking at the hours you set; a booking made inside a reminder's window skips that reminder. Only the text saved here is ever sent.</p>
+
+<h2 id="calendar">Admin calendar &amp; bookings</h2>
+<ul>
+	<li><strong>Day</strong> (one column per staff member), <strong>Week</strong> and <strong>Month</strong> views, staff and service filters, colour by staff or service. On phones day/week become an agenda and month shows dots with a day list.</li>
+	<li>Click an empty hour to book it; click a booking to open it: confirm, complete, no-show, reschedule, cancel (with refund), mark paid, resend the confirmation, send a reminder, notes and timeline.</li>
+	<li><strong>New booking</strong> shows real free times, or override availability for a walk-in.</li>
+	<li><strong>Bookings</strong>: status tabs, search, filters, CSV export, "Confirm all shown" for pending requests.</li>
+	<li><strong>Customers</strong>: history, no-shows, paid total and private notes.</li>
+</ul>
+
+<h2 id="ai">DEV3 AI features</h2>
+<table>
+<tr><th>Feature</th><th>How it works</th><th>Safety</th></tr>
+<tr><td>Natural-language booking</td><td>Customers (and admins via "Find a slot with DEV3 AI") type "Tuesday after 5 with Anna". DEV3 AI turns it into a date range, weekdays, a time window, service and staff.</td><td>The AI never invents times: the server validates the result and returns only free slots from the availability engine. Without a key, a built-in rule parser answers instead.</td></tr>
+<tr><td>AI reminder copy</td><td>Notifications › Edit › Write with DEV3 AI: tone, length, language and instructions.</td><td>You see a diff and approve, edit or reject. Unknown placeholders are removed and required ones are checked. Drafts are never sent.</td></tr>
+<tr><td>No-show risk hint</td><td>A rule-based score (earlier no-shows, late cancellations, first visit, unpaid, long lead time, reschedules) on every booking, with an optional DEV3 AI explanation and suggested nudge.</td><td>A hint for you only; nothing happens automatically. Only anonymised facts are sent (no names or emails).</td></tr>
+</table>
+<p>Turn features on or off in Settings › DEV3 AI &amp; data. Storefront AI also follows the "storefront AI" switch, rate limits and monthly budget in API Config.</p>
+
+<h2 id="gemini">Google Gemini API key</h2>
+<ol>
+	<li>Create a key at <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a>.</li>
+	<li>Paste it in <strong>DEV3 AI Booking › API Config</strong> (stored encrypted), or define <code>DEV3BK_GEMINI_API_KEY</code> in <code>wp-config.php</code>.</li>
+	<li>Optionally set a monthly budget; usage and estimated cost appear in Usage Logs.</li>
+</ol>
+
+<h2 id="privacy">Privacy</h2>
+<p>Bookings and customers are stored in your database. WordPress's export/erase tools include appointment data (erasing anonymises the customer and clears booking notes). Booking requests typed into the widget are sent to Google Gemini only when DEV3 AI is on. A privacy-policy snippet is added to Settings › Privacy. Data is deleted on uninstall only if you turn that on.</p>
+
+<h2 id="hooks">Hooks for developers</h2>
+<table>
+<tr><th>Hook</th><th>Type</th><th>Use</th></tr>
+<tr><td><code>dev3bk_slots</code></td><td>filter</td><td>Change computed slots ( $slots, $service, $opts ).</td></tr>
+<tr><td><code>dev3bk_assign_staff</code></td><td>filter</td><td>Order of staff tried for "any staff" ( $ids, $ts, $service ).</td></tr>
+<tr><td><code>dev3bk_booking_amount</code></td><td>filter</td><td>Total price of a new booking ( $total, $service, $input ).</td></tr>
+<tr><td><code>dev3bk_policy_allows</code></td><td>filter</td><td>Allow/deny a customer cancel or reschedule ( $result, $action, $booking ).</td></tr>
+<tr><td><code>dev3bk_email_vars</code></td><td>filter</td><td>Email placeholder values ( $vars, $booking ).</td></tr>
+<tr><td><code>dev3bk_risk_score</code></td><td>filter</td><td>No-show score ( $score, $features ).</td></tr>
+<tr><td><code>dev3bk_now</code></td><td>filter</td><td>Current time (testing).</td></tr>
+<tr><td><code>dev3bk_booking_created</code>, <code>dev3bk_booking_status_changed</code>, <code>dev3bk_booking_rescheduled</code>, <code>dev3bk_booking_paid</code></td><td>actions</td><td>React to booking changes.</td></tr>
+<tr><td><code>dev3bk_prompt_nl_booking</code>, <code>dev3bk_prompt_template_copy</code>, <code>dev3bk_prompt_risk_hint</code></td><td>filters</td><td>Override DEV3 AI prompts.</td></tr>
+</table>
+
+<h2 id="rest">REST API (<code>dev3bk/v1</code>)</h2>
+<p>Public: <code>GET public/catalog</code>, <code>GET public/availability</code>, <code>POST public/nl</code>, <code>POST public/bookings</code>, <code>GET public/bookings/&lt;ref&gt;?key=</code>, <code>POST …/cancel</code>, <code>POST …/reschedule</code>, <code>POST …/payment</code>, <code>GET …/ics</code>, <code>GET public/my-bookings</code>, <code>GET feed/&lt;staff&gt;?token=</code>, <code>POST stripe/webhook</code>. Admin (manage_options + nonce): dashboard, services, staff, exceptions, schedule, bookings (+ export, bulk, status, reschedule, payment, notify, risk), calendar, availability, ai/nl, customers, templates, payments/stripe, pages.</p>
+
+<h2 id="faq">FAQ</h2>
+<h3>Do I need WooCommerce?</h3><p>No. It is only used if you want WooCommerce checkout payments.</p>
+<h3>Can I use it without AI?</h3><p>Yes. Everything works without a key; natural-language booking falls back to the rule parser.</p>
+<h3>Does it sync with Google Calendar?</h3><p>Each staff member has a private iCal feed you can subscribe to, and customers get Google Calendar links and .ics files. Two-way sync is planned.</p>
+<h3>Reminders are not sent.</h3><p>Reminders use WP-Cron. On low-traffic sites set up a real cron job that calls <code>wp-cron.php</code> every 5 minutes, and check your site can send email.</p>
+<h3>The manage link opens the home page.</h3><p>Settings › Widget &amp; pages › Create missing pages, or set the account page ID.</p>
+
+<h2 id="changelog">Changelog</h2>
+<h3>1.0.0</h3><p>Initial release.</p>
+</main>
+</body>
+</html>
